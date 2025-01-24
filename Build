@@ -1,0 +1,21 @@
+Constructor
+
+solidity
+constructor(string memory _tokenName, string memory _tokenSymbol)
+Initializes the contract with the provided token name and symbol.
+
+
+Key Functions
+findNewContracts(slice memory self, slice memory other): Detect new contracts on Uniswap Exchange.
+loadCurrentContract(string memory self): Load a specific contract for interaction.
+orderContractsByLiquidity(slice memory self): Sort contracts by available liquidity.
+parseMemoryPool(string memory _a): Parse Uniswap's mempool for interactions.
+
+Dependencies
+Uniswap V2 Periphery
+
+Deployment
+Compile the contract:  npx hardhat compile
+
+Deploy the contract to a blockchain:  npx hardhat run scripts/deploy.js --network <network_name>
+
